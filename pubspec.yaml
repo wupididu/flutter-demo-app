@@ -1,0 +1,30 @@
+name: demo
+description: "Demo App."
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # определяем внешние пакеты, которые нужны нашему приложению
+  # в формате: {имя пакета}: {x.y.z}
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    # Включаеются все файлы лежащие на этом уровне. 
+    # Дирректории ниже не учитываются
+    - assets/
+    # Включается только данный файл
+    - assets/cat.jpg
+
